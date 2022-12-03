@@ -202,13 +202,18 @@ body {
     display: none;
 }
 
+.btn-more {
+    padding-left: 51px;
+    padding-right: 51px;
+}
+
 .flex-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 58px;
     background-color: #3CDDF3;
-
+    padding-bottom: 40px;
 }
 
 .flex-bottom h2{
@@ -224,15 +229,16 @@ body {
 
 .btn-bottom {
     background-color: #232C50;
-    margin-bottom: 40px;
 }
 
-.flex-footer {
+.footer {
+    background-color: #1E1E26;
+}
+
+.flex-footer-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1E1E26;
-
 }
 
 .form-footer-container {
@@ -285,27 +291,35 @@ body {
     padding: 6px;
 }
 
+.flex-logo-rrss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 .flex-rrss {
     display: flex;
-    width: 100%;
+    flex-direction: row;
     justify-content: space-around;
     margin: 25px 0;
-
+    width: 100%;
 }
 
 .logo-footer {
     margin: 25px 0;
+    height: 25px;
+    width: 107px;
 }
 
 .right-footer {
-    margin: 40px;
+    padding: 40px;
     font-style: normal;
     font-weight: 500;
     font-size: 12.5px;
     line-height: 18px;
     color: #8C8C94;
-
+    text-align: center;
 }
 
 @media screen and (min-width: 1000px) {
@@ -387,9 +401,12 @@ body {
     }
 
     .info-body p{
-        padding-left: 90px;
+        padding: 18px 0 18px 90px;
     }
 
+    .flex-best{
+        margin-bottom: 150px;
+    }
 
     .best-sec {
         display: flex;
@@ -407,12 +424,69 @@ body {
     }
 
     .best-info p{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 156.6%;
         margin: 21px 14px 17px 14px;
     }
+    
+    .flex-bottom {
+        flex-direction: row;
+        padding: 64px 165px;
+        justify-content: space-between;
+        background-color: #8B48BF;
+    }
 
+    .flex-bottom h2{
+        width: 40%;
+        text-align: left;
+        padding: 0 0;
+    }
+
+    .btn-bottom {
+        background-color: #FFFFFF;
+        color: #8B48BF;
+    }
+
+    .flex-footer-main {
+        display: flex;
+        flex-direction: row;
+        padding: 54px 10%;
+        justify-content: space-between;
+    }    
+
+    .form-footer-container {
+        order: 3;
+        width: 25%;
+        padding: 0;
+        height: 140px;
+    }
+    
+    .nav-footer {
+        order: 2;
+        width: 40%;
+    }
+
+    .flex-logo-rrss{
+        order: 1;
+        height: 140px;
+        width: 15%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+
+    .right-footer{
+        display: flex;
+        order: 4;
+        position: relative;
+        justify-content: flex-end;
+    }
+
+    .logo-footer{
+        margin: 0;
+    }
+
+    .flex-rrss{
+        margin: 0;
+    }
 }
 
