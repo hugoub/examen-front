@@ -231,14 +231,12 @@ body {
     background-color: #232C50;
 }
 
-.footer {
-    background-color: #1E1E26;
-}
-
-.flex-footer-main {
+.flex-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #1E1E26;
+
 }
 
 .form-footer-container {
@@ -260,6 +258,7 @@ body {
     border-radius: 50px;
     padding: 12px 24px;
     border: none;
+    margin-right: 12px;
 }
 
 .form-footer::placeholder{
@@ -313,13 +312,13 @@ body {
 }
 
 .right-footer {
-    padding: 40px;
+    margin: 40px;
     font-style: normal;
     font-weight: 500;
     font-size: 12.5px;
     line-height: 18px;
     color: #8C8C94;
-    text-align: center;
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -445,18 +444,20 @@ body {
         color: #8B48BF;
     }
 
-    .flex-footer-main {
+    .flex-footer {
         display: flex;
         flex-direction: row;
-        padding: 54px 10%;
+        flex-wrap: wrap;
+        padding: 52px 10%;
         justify-content: space-between;
+
     }    
 
     .form-footer-container {
         order: 3;
         width: 25%;
         padding: 0;
-        height: 140px;
+        height: 130px;
     }
     
     .nav-footer {
@@ -466,19 +467,18 @@ body {
 
     .flex-logo-rrss{
         order: 1;
-        height: 140px;
         width: 15%;
         flex-direction: column-reverse;
         align-items: flex-start;
+        height: 130px;
         justify-content: space-between;
-
     }
 
     .right-footer{
-        display: flex;
         order: 4;
-        position: relative;
-        justify-content: flex-end;
+        width: 100%;
+        text-align: end;
+        margin: 0;
     }
 
     .logo-footer{
@@ -488,5 +488,6 @@ body {
     .flex-rrss{
         margin: 0;
     }
+
 }
 
