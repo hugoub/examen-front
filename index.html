@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <title>Document</title>
+    <title>Sportit</title>
   </head>
   <body>
     <header class="flex-nav">
@@ -23,15 +23,15 @@
 
       <nav class="header-nav">
         <ul>
-          <li>Sport</li>
-          <li>Products</li>
-          <li>About Us</li>
-          <li>Training</li>
-          <li>Community</li>
+          <li><a href="#" class="header-a links">Sport</a></li>
+          <li><a href="#" class="header-a links">Products</a></li>
+          <li><a href="#" class="header-a links">About Us</a></li>
+          <li><a href="#" class="header-a links">Training</a></li>
+          <li><a href="#" class="header-a links">Community</a></li>
         </ul>
       </nav>
 
-      <button class="btn header-btn">Contact</button>
+      <button class="btn header-btn link-first-color">Contact</button>
 
       <img class="header-burger" src="./images/menu-mobile.svg" alt="Menú" />
     </header>
@@ -50,7 +50,7 @@
             The final Open of the 2022 World Padel Tour season is underway,
             don't miss out on any of the action!
           </p>
-          <button class="btn">Contact</button>
+          <button class="btn link-first-color">Contact</button>
         </div>
       </article>
 
@@ -115,81 +115,84 @@
         <h2 class="best-title">Best of the month</h2>
 
         <div class="flex-best-container">
+          <div class="best-info best-sec">
+            <img src=".\images\avatar-sanyo.png" alt="Sanyo" />
+            <h4>Sanyo</h4>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
 
-        <div class="best-info best-sec">
-          <img src=".\images\avatar.lebron.png" alt="Lebron" />
-          <h4>Lebron</h4>
-          <p>
-            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
+          <div class="best-info best-main">
+            <img src=".\images\avatar.lebron.png" alt="Lebron" />
+            <h4>Lebron</h4>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
+
+          <div class="best-info best-sec">
+            <img src=".\images\avatar-navarro.png" alt="Navarro" />
+            <h4>Lebron</h4>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </div>
         </div>
 
-        <div class="best-info best-main">
-          <img src=".\images\avatar.lebron.png" alt="Lebron" />
-          <h4>Lebron</h4>
-          <p>
-            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-        </div>
-
-        <div class="best-info best-sec">
-          <img src=".\images\avatar.lebron.png" alt="Lebron" />
-          <h4>Lebron</h4>
-          <p>
-            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-        </div>
-      </div>
-
-        <button class="btn">More</button>
+        <button class="btn btn-more link-first-color">More</button>
       </div>
 
       <div class="flex-bottom">
         <h2>Get to know the best teams of the year</h2>
-
         <button class="btn btn-bottom">Go for it</button>
       </div>
 
       <footer class="flex-footer">
-        <div class="form-footer-container">
+
+        <form action="./form/main.php" method="get" class="form-footer-container">
           <input
-            class="form-footer"
-            type="text"
+            class="input-footer"
+            type="email"
             placeholder="Update in your inbox..."
+            name="email"
           />
 
-          <button class="btn btn-footer">Go</button>
-        </div>
+          <button class="btn btn-footer link-first-color" type="submit" id="go-submit">Go</button>
+        </form>
+
 
         <div class="nav-footer">
           <ul class="nav-list">
-            <li>Home</li>
-            <li>Pricing</li>
-            <li>Products</li>
-            <li>About Us</li>
+            <a href="#" class="nav-list-a"><li>Home</li></a>
+            <a href="#" class="nav-list-a"><li>Pricing</li></a>
+            <a href="#" class="nav-list-a"><li>Products</li></a>
+            <a href="#" class="nav-list-a"><li>About Us</li></a>
           </ul>
           <ul class="nav-list">
-            <li>Training</li>
-            <li>Community</li>
-            <li>Privacy Policy</li>
+            <a href="#" class="nav-list-a"><li>Training</li></a>
+            <a href="#" class="nav-list-a"><li>Community</li></a>
+            <a href="#" class="nav-list-a"><li>Privacy Policy</li></a>
           </ul>
         </div>
 
-        <div class="flex-rrss">
-          <img src=".\images\icon-facebook.svg" alt="" />
-          <img src=".\images\icon-youtube.svg" alt="" />
-          <img src=".\images\icon-twitter.svg" alt="" />
-          <img src=".\images\icon-pinterest.svg" alt="" />
-          <img src=".\images\icon-instagram.svg" alt="" />
-        </div>
+        <div class="flex-logo-rrss">
+          <div class="flex-rrss">
+            <a href=""> <img src=".\images\icon-facebook.svg" alt="" /></a>
+            <a href=""> <img src=".\images\icon-youtube.svg" alt="" /></a>
+            <a href=""> <img src=".\images\icon-twitter.svg" alt="" /></a>
+            <a href=""> <img src=".\images\icon-pinterest.svg" alt="" /></a>
+            <a href=""> <img src=".\images\icon-instagram.svg" alt="" /></a>
+          </div>
 
-        <img src=".\images\logo.svg" alt="" class="logo-footer" />
+          <img src=".\images\logo-white.svg" alt="" class="logo-footer" />
+        </div>
 
         <p class="right-footer">Copyright 2020. All Rights Reserved</p>
       </footer>

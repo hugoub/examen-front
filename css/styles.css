@@ -2,13 +2,22 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Be Vietnam Pro', sans-serif;
-
 }
 
 body {
     font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+.btn{
+    padding: 12px 24px;
+    background: #8B48BF;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+}
+
+/* Header */
 
 .flex-nav {
     display: flex;
@@ -16,12 +25,14 @@ body {
     align-items: center;
     height: 150px;
     margin: 0 50px;
+
 }
 
 .header-nav, .header-btn {
     display: none;
 }
 
+/* Estilos de la noticia de Portada  */
 
 .flex-article {
     display: flex;
@@ -41,30 +52,26 @@ body {
     margin: 28px 0;
     font-weight: 700;
     font-size: 50px;
-    line-height: 114.6%;
-
+    line-height: 114%;
     letter-spacing: -0.035em;
-
     color: #232C50;
 }
 
 .article-text p{
     margin: 28px 0;
     font-weight: 500;
-    font-size: 16.5584px;
-    line-height: 157.1%;
-
+    font-size: 16px;
+    line-height: 157%;
     color: #000000;
 }
 
-.btn{
-    padding: 12px 24px;
 
-    background: #8B48BF;
-    border-radius: 50px;
-    border: none;
-    color: #FFFFFF;
+.link-first-color:hover {
+    background-color: rgba(139, 72, 191, 0.7);
+    cursor: pointer;
 }
+
+/* Sección de Pregunta */
 
 .flex-subarticle{
     display: flex;
@@ -85,13 +92,11 @@ body {
 .flex-subarticle p{
     font-weight: 500;
     font-size: 16px;
-    line-height: 151.1%;
+    line-height: 151%;
     color: #FFFFFF;
 }
 
-
-
-/* Sección de Información */
+/* Sección información númerada */
 
 .flex-info {
     display: flex;
@@ -138,13 +143,13 @@ body {
     color: #B3B2B7;
     font-style: normal;
     font-weight: 500;
-    font-size: 16.2984px;
+    font-size: 16px;
     line-height: 26px;
     padding: 31px 31px 31px 10px;
     letter-spacing: -0.01em;
 }
 
-/* Best of the month */
+/* Sección de tenistas destacados  */
 
 .flex-best {
     display: flex;
@@ -158,8 +163,8 @@ body {
     margin: 0 0 40px 0;
     font-style: normal;
     font-weight: 700;
-    font-size: 39.2143px;
-    line-height: 156.6%;
+    font-size: 39px;
+    line-height: 157%;
 }
 
 .best-info {
@@ -175,16 +180,16 @@ body {
 .best-info img {
     position: absolute;
     top: -35px;
-    width: 77.81px;
-    height: 71.39px;
+    width: 77px;
+    height: 71px;
 }
 
 .best-info h4 {
     margin-top: 56px;
     font-style: normal;
     font-weight: 700;
-    font-size: 16.0714px;
-    line-height: 156.6%;
+    font-size: 16px;
+    line-height: 156%;
     color: #3F4868;
  }
 
@@ -193,7 +198,7 @@ body {
    font-style: normal;
    font-weight: 500;
    font-size: 16px;
-   line-height: 156.6%;
+   line-height: 156%;
    color: #B9B9C1;
    text-align: center;
 }
@@ -202,13 +207,20 @@ body {
     display: none;
 }
 
+.btn-more {
+    padding-left: 51px;
+    padding-right: 51px;
+}
+
+/* Sección para conocero los mejores equipos del año */
+
 .flex-bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 58px;
     background-color: #3CDDF3;
-
+    padding-bottom: 40px;
 }
 
 .flex-bottom h2{
@@ -224,8 +236,13 @@ body {
 
 .btn-bottom {
     background-color: #232C50;
-    margin-bottom: 40px;
 }
+
+.btn-bottom:hover {
+    cursor: pointer;
+}
+
+/* Footer */
 
 .flex-footer {
     display: flex;
@@ -248,19 +265,20 @@ body {
     height: 42px;
 }
 
-.form-footer {
-    width: 80%;
+.input-footer {
+    width: 65vw;
     height: 44px;
     border-radius: 50px;
     padding: 12px 24px;
     border: none;
+    margin-right: 12px;
 }
 
-.form-footer::placeholder{
+.input-footer::placeholder{
     color: #A0A0A0;
     font-style: normal;
     font-weight: 600;
-    font-size: 13.1806px;
+    font-size: 13px;
     line-height: 19px;
 }
 
@@ -283,26 +301,40 @@ body {
 
 .nav-list li{
     padding: 6px;
+    text-decoration: none;
 }
 
+.nav-list-a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.flex-logo-rrss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
 .flex-rrss {
     display: flex;
-    width: 100%;
+    flex-direction: row;
     justify-content: space-around;
     margin: 25px 0;
-
+    width: 100%;
 }
 
 .logo-footer {
     margin: 25px 0;
+    height: 25px;
+    width: 107px;
 }
 
 .right-footer {
     margin: 40px;
     font-style: normal;
     font-weight: 500;
-    font-size: 12.5px;
+    font-size: 12px;
     line-height: 18px;
     color: #8C8C94;
 
@@ -321,8 +353,10 @@ body {
     .header-nav{
         display: block;
         width: 30%;
-        
     }
+
+
+
     .header-nav ul{
         display: flex;
         list-style-type: none;
@@ -330,7 +364,20 @@ body {
         font-style: normal;
         font-weight: 500;
         font-size: 13px;
-        line-height: 176.1%;
+        line-height: 176%;
+    }
+
+    .header-a{
+        color: #242E52;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 176%;
+        text-decoration: none;
+    }
+
+    .links:hover{
+        color: rgba(36, 46, 82, 0.6);
     }
 
     .header-btn {
@@ -387,9 +434,12 @@ body {
     }
 
     .info-body p{
-        padding-left: 90px;
+        padding: 18px 0 18px 90px;
     }
 
+    .flex-best{
+        margin-bottom: 150px;
+    }
 
     .best-sec {
         display: flex;
@@ -407,12 +457,74 @@ body {
     }
 
     .best-info p{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 156.6%;
         margin: 21px 14px 17px 14px;
     }
+    
+    .flex-bottom {
+        flex-direction: row;
+        padding: 64px 165px;
+        justify-content: space-between;
+        background-color: #8B48BF;
+    }
 
+    .flex-bottom h2{
+        width: 40%;
+        text-align: left;
+        padding: 0 0;
+    }
+
+    .btn-bottom {
+        background-color: #FFFFFF;
+        color: #8B48BF;
+    }
+
+    .flex-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 52px 10%;
+        justify-content: space-between;
+
+    }    
+
+    .input-footer{
+        width: 15vw;;
+    }
+
+    .form-footer-container {
+        order: 3;
+        width: 25%;
+        padding: 0;
+        height: 130px;
+    }
+
+    .nav-footer {
+        order: 2;
+        width: 40%;
+    }
+
+    .flex-logo-rrss{
+        order: 1;
+        width: 15%;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        height: 130px;
+        justify-content: space-between;
+    }
+
+    .right-footer{
+        order: 4;
+        width: 100%;
+        text-align: end;
+        margin: 0;
+    }
+
+    .logo-footer{
+        margin: 0;
+    }
+
+    .flex-rrss{
+        margin: 0;
+    }
 }
 
